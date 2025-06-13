@@ -2,20 +2,41 @@
   {
     "build": {
       "app": "uapp",
-      "version": "11.1.0",
+      "version": "22.11.22",
       "environment": "prod",
       "partnerId": "sj"
     },
     "configuration": {
-      "apiUrl": "https://api.sj.prod.swipejobs-exchange.com/v3",
+      "apiUrl": "https://api.sj.preprod.swipejobs-exchange.com/v3",
       "appFeatures": {
         "localBranchSupport": true,
-        "paymentMethods" : {
+        "paymentMethods": {
           "validations": {
             "bankAccountValidator": "^[0-9]{5,19}$"
           }
         }
-      }
+      },
+      "appStoreReview": true
+    }
+  },
+  {
+    "build": {
+      "app": "uapp",
+      "version": "22.11.22",
+      "environment": "prod",
+      "partnerId": "sj"
+    },
+    "configuration": {
+      "apiUrl": "https://api.sj.preprod.swipejobs-exchange.com/v3",
+      "appFeatures": {
+        "localBranchSupport": true,
+        "paymentMethods": {
+          "validations": {
+            "bankAccountValidator": "^[0-9]{5,19}$"
+          }
+        }
+      },
+      "appStoreReview": true
     }
   }
 ]
